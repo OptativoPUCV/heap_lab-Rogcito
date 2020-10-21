@@ -42,8 +42,9 @@ void heap_push(Heap* pq, void* data, int priority){
     pq->heapArray[aux]=tmp;
     aux=parent;
     parent=(aux-1)/2;
+    pq->size++;
   }
-  pq->size++;
+  //pq->size++;
 }
 
 
