@@ -34,6 +34,7 @@ void heap_push(Heap* pq, void* data, int priority){
   }
   pq->heapArray[pq->size].priority=priority;
   pq->heapArray[pq->size].data=data;
+  pq->size++;
   int aux=pq->size;
   int parent=(aux-1)/2;
   while(pq->heapArray[parent].priority<pq->heapArray[aux].priority){
@@ -43,7 +44,6 @@ void heap_push(Heap* pq, void* data, int priority){
     aux=parent;
     parent=(aux-1)/2;
   }
-  pq->size++;
 }
 
 
