@@ -112,3 +112,9 @@ Wed Oct 21 18:50:23 UTC 2020:
  tests:  2|2
 total_score: 20/70
 d42eb73
+Wed Oct 21 18:50:49 UTC 2020: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  2|2
+total_score: 20/70
+be10d84
