@@ -200,3 +200,9 @@ Thu Oct 22 15:34:02 UTC 2020:
  1 file changed, 5 insertions(+), 2 deletions(-)
  tests:  0|0
 2e0e25f
+Thu Oct 22 15:36:32 UTC 2020: 
+ heap.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+ tests:  7|1
+total_score: 55/70
+a37e8b0
