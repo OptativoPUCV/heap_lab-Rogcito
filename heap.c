@@ -71,6 +71,9 @@ void heap_pop(Heap* pq){
       der=2*i+2;
       hijoDer=pq->heapArray[der];
     }
+    if((izq>pq->size)&&(der>pq->size)){
+      break;
+    }
   }
 }
 
