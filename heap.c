@@ -60,13 +60,14 @@ void heap_pop(Heap* pq){
     if(hijoIzq.priority>hijoDer.priority){
       pq->heapArray[i]=hijoIzq;
       pq->heapArray[izq]=aux;
+      i++;
       izq=2*i+1;
     }else{
       pq->heapArray[i]=hijoDer;
       pq->heapArray[der]=aux;
+      i++;
       der=2*i+2;
     }
-    i++;
   }
 }
 
