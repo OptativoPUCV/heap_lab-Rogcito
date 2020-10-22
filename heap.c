@@ -67,6 +67,7 @@ void heap_pop(Heap* pq){
       der=2*i+2;
     }
   }
+  i++;
 }
 
 Heap* createHeap(){
