@@ -55,18 +55,21 @@ void heap_pop(Heap* pq){
   heapElem hijoDer=pq->heapArray[2];
   int izq=i+1;
   int der=i+2;
+  int auxi;
   while((pq->heapArray[i].priority<hijoIzq.priority)||(pq->heapArray[i].priority<hijoDer.priority)){
     heapElem aux=pq->heapArray[i];
     if(hijoIzq.priority>hijoDer.priority){
       pq->heapArray[i]=hijoIzq;
       pq->heapArray[izq]=aux;
+      auxi=i;
       i=izq;
-      izq=2*i+1;
+      izq=2*auxi+1;
     }else{
       pq->heapArray[i]=hijoDer;
       pq->heapArray[der]=aux;
+      auxi=i;
       i=der;
-      der=2*i+2;
+      der=2*auxi+2;
     }
   }
 }
